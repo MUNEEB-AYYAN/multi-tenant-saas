@@ -43,8 +43,8 @@ return (
     {loading ? (
         <p>Loading...</p>
     ) : (
-        <div className="grid grid-cols-3 gap-6">
-        <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
             <h2 className="text-gray-500">
             Total Projects
             </h2>
@@ -53,7 +53,7 @@ return (
             </p>
         </div>
 
-        <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <div className="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
             <h2 className="text-gray-500">
             Total Tasks
             </h2>
@@ -62,7 +62,7 @@ return (
             </p>
         </div>
 
-        <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <div className="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1">
             <h2 className="text-gray-500">
             Organization ID
             </h2>

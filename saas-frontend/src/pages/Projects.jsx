@@ -58,7 +58,8 @@ return (
     </h1>
 
     {error && (
-    <div className="bg-red-100 text-red-600 p-3 rounded mb-6">
+    <div className="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1 flex justify-between items-center"
+>
         {error}
     </div>
     )}
@@ -88,14 +89,15 @@ return (
     {/* Project List */}
     <div className="space-y-4">
     {projects.length === 0 ? (
-        <div className="bg-white p-6 rounded-xl shadow text-gray-500">
-        No projects yet.
+        <div className="bg-white p-10 rounded-2xl shadow text-center text-gray-400">
+            No projects yet. Create your first one.
         </div>
     ) : (
         projects.map((project) => (
         <div
             key={project._id}
-            className="bg-white p-5 rounded-xl shadow hover:shadow-lg transition flex justify-between items-center"
+            className="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1 flex justify-between items-center"
+
         >
             <span className="font-medium text-lg">
             {project.name}
