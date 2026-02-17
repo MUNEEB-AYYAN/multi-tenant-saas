@@ -23,7 +23,7 @@ return (
         <h2 className="text-xl font-bold text-blue-600">
             SaaS
         </h2>
-        <    className="px-6 py-2 rounded-lg font-medium transition transform hover:scale-105"
+        <button className="px-6 py-2 rounded-lg font-medium transition transform hover:scale-105"
         onClick={() => setOpen(false)}>✕</button>
         </div>
 
