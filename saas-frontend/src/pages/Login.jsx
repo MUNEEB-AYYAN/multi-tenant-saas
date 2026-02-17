@@ -2,6 +2,7 @@ import { useState, useContext, useEffect } from "react"
 import { useNavigate, Link } from "react-router-dom"
 import axiosInstance from "../utils/axiosInstance"
 import { AuthContext } from "../context/AuthContext"
+import Loader_n from "../components/Loader_n"
 
 const Login = () => {
 const [email, setEmail] = useState("")
@@ -88,7 +89,7 @@ return (
         disabled={loading}
         className="w-full bg-blue-600 hover:bg-green-300 text-white py-3 rounded-lg transition disabled:opacity-50"
         >
-        {loading ? "Logging in..." : "Login"}
+        {loading ? <Loader_n /> : "Login"}
         </button>
     </form>
 

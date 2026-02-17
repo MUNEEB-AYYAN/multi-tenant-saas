@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import Layout from "../components/Layout"
 import axiosInstance from "../utils/axiosInstance"
+import Loader_n from "../components/Loader_n"
 
 const Dashboard = () => {
 const [projectsCount, setProjectsCount] = useState(0)
@@ -41,7 +42,7 @@ return (
     </h1>
 
     {loading ? (
-        <p>Loading...</p>
+        <div><Loader_n /></div>
     ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition transform hover:-translate-y-1">

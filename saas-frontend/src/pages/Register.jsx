@@ -2,6 +2,7 @@ import { useState, useContext, useEffect } from "react"
 import { useNavigate, Link } from "react-router-dom"
 import axiosInstance from "../utils/axiosInstance"
 import { AuthContext } from "../context/AuthContext"
+import Loader_n from "../components/Loader_n"
 
 const Register = () => {
 const [name, setName] = useState("")
@@ -119,7 +120,7 @@ return (
             disabled={loading}
             className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg transition disabled:opacity-50"
         >
-            {loading ? "Creating..." : "Register"}
+            {loading ? <Loader_n /> : "Register"}
         </button>
         </form>
 
